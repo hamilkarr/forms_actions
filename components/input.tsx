@@ -13,10 +13,22 @@ export default function Input({
     errors,
     name,
 }: InputProps) {
+    function isRedRing(type: string, errors: string[]) {
+        if (errors.length > 0 && type === 'password') {
+            return 'ring-red-500';
+        }
+        return 'ring-gray-300';
+    }
+    function isRedBorder(type: string, errors: string[]) {
+        if (errors.length > 0 && type === 'password') {
+            return 'border-red-500';
+        }
+        return 'border-gray-300';
+    }
     return (
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col w-full gap-4">
             <input
-                className=" py-2 px-3 rounded-full ring-2 ring-gray-300 ring-offset-2 focus:outline-none focus:border focus:border-gray-300"
+                className={`py-2 px-3 rounded-full ring-2 ${isRedRing(type, errors)} ring-offset-2 focus:outline-none focus:border ${isRedBorder(type, errors)} transition-colors`}
                 type={type}
                 placeholder={placeholder}
                 required={required}
