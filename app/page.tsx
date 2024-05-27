@@ -17,12 +17,8 @@ export default function Home() {
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
         >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            ></g>
+            <g id="SVGRepo_bgCarrier"></g>
+
             <g id="SVGRepo_iconCarrier">
                 <defs></defs>
                 <title>user</title>
@@ -39,12 +35,8 @@ export default function Home() {
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
         >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            ></g>
+            <g id="SVGRepo_bgCarrier"></g>
+
             <g id="SVGRepo_iconCarrier">
                 <path d="M22,5V9L12,13,2,9V5A1,1,0,0,1,3,4H21A1,1,0,0,1,22,5ZM2,11.154V19a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V11.154l-10,4Z"></path>
             </g>
@@ -60,12 +52,8 @@ export default function Home() {
             fill="currentColor"
             stroke="#000000"
         >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-            ></g>
+            <g id="SVGRepo_bgCarrier"></g>
+
             <g id="SVGRepo_iconCarrier">
                 {' '}
                 <title>990</title> <defs> </defs>{' '}
@@ -122,28 +110,28 @@ export default function Home() {
                 />
                 <Button text="Log in" />
                 {state?.isLogin ? (
-                  <div
-                      className={` bg-green-500 w-full py-3 px-4 rounded-xl flex items-center gap-2 -mt-5`}
-                  >
-                      <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          className="size-5"
-                      >
-                          <path
-                              d="M16.5163 8.93451L11.0597 14.7023L8.0959 11.8984"
-                              stroke="#000000"
-                              strokeWidth="2"
-                          />
-                          <path
-                              d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                              stroke="#000000"
-                              strokeWidth="2"
-                          />
-                      </svg>
-                      Welcome back!
-                  </div>
+                    <div
+                        className={` bg-green-500 w-full py-3 px-4 rounded-xl flex items-center gap-2 -mt-5`}
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            className="size-5"
+                        >
+                            <path
+                                d="M16.5163 8.93451L11.0597 14.7023L8.0959 11.8984"
+                                stroke="#000000"
+                                strokeWidth="2"
+                            />
+                            <path
+                                d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                stroke="#000000"
+                                strokeWidth="2"
+                            />
+                        </svg>
+                        Welcome back!
+                    </div>
                 ) : null}
             </form>
         </main>
